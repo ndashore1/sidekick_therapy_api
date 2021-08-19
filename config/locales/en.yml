@@ -1,0 +1,58 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  something_went_wrong: Something went wrong
+  created: '%{entity} created successfully'
+  updated: '%{entity} updated successfully'
+  destroyed: '%{entity} destroyed successfully'
+  error:
+    not_found: '%{entity} not found'
+  api:
+    jwt:
+      auth_token_missing: Missing access token
+      auth_token_not_authorized: Invalid token
+      unexpected_error: Something gone wrong
+
+  users:
+    email_or_password_blank: Email or Password is blank
+    not_found_in_database: User not found in database
+    only_performed_by_patient: Patient can perform this operation only.
+    only_performed_by_therapists: Therapists can perform this operation only.
+    signed_up_successfully: User created successfully.
+    therapists_switched: Therapists switched successfully
+    sessions:
+      signed_in: User signed in successfully.
+      signed_out: User signed out successfully.
+
+  therapists_already_assigned: You have already selected therapists.
+    Please use switch therapists to change therapists.
